@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,6 +29,21 @@
       }
       .placeholder-style::placeholder {
         padding: 5px 12px;
+      }
+      .head-animi {
+        white-space: nowrap;
+        animation: type 5s steps(26) infinite, blink 0.8s step-end infinite;
+      }
+      @keyframes type {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 18ch;
+        }
+        100% {
+          width: 0;
+        }
       }
     </style>
 
@@ -75,7 +90,9 @@
       <section class="max-w-[1320px] mx-auto my-10 md:z-20 mb-16">
         <div class="grid md:grid-cols-2 relative z-20 p-4">
           <div class="space-y-8">
-            <h1 class="lg:text-6xl text-3xl adilam-font">
+            <h1
+              class="lg:text-6xl text-3xl adilam-font head-animi overflow-hidden border-r-2 border-transparent"
+            >
               Pamper Your Pet, <br />
               Because They Deserve <br />
               the Bes
@@ -444,16 +461,6 @@
             <li>Find a pet</li>
             <li>Breeds</li>
             <li>Contact us</li>
-          </div>
-          <!-- third-div -->
-          <div class="lg:mt-12">
-            <p>Follow Us</p>
-            <div class="flex gap-4">
-              <p><i class="fa-brands fa-facebook"></i></p>
-              <p><i class="fa-brands fa-instagram"></i></p>
-              <p><i class="fa-brands fa-linkedin"></i></p>
-              <p><i class="fa-brands fa-youtube"></i></p>
-            </div>
           </div>
         </div>
       </div>
